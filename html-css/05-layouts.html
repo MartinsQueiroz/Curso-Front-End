@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: #1C1C1C;
+			}
+
+			/* Style the header */
+			header {
+				background-color: #FF6347;
+				padding: 30px;
+				text-align: center;
+				font-size: 35px;
+				color: white;
+			}
+
+			ul{
+			   padding: 0;
+			   margin: 0;
+			   background: rgba(220, 220, 220, 1.0);
+			}
+
+			a {
+				display: block;
+			    background-color: #FF6347;
+			    padding-top: 8px 16px;
+			    text-decoration: none;
+			    color: white;
+			    text-align: center;
+			    border-bottom: 1px solid #000000;
+
+			}
+
+			a:hover{
+				background: rgba(255, 127, 80, 1.0);
+			}
+
+			li a {
+				letter-spacing: 0.01rem;
+    			line-height: 1.5;
+			}
+
+			/* create two coluns/boxes that floas next to each other */
+			nav {
+				float: left;
+				width: 30%;
+				height: 300px; /* only for demonstration, should be removed */
+		        background: url('/C:/Users/lucas/OneDrive/Área de Trabalho/Front-End/html/Imagens/pattern4.png') center top repeat #EEEEEE;;
+				padding: 1rem		
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+				list-style-type: none;
+				font-style: none;
+				padding: 0;
+			}
+
+			article {
+				float: left;
+				padding: 20px;
+				width: 70%;
+				background-color: #f1f1f1;
+				height: 300px;/* only for demonstration, should be removed */
+			}
+
+			/* clear flaots after the colums */
+
+			section::After {
+				content: "";
+				display: table;
+				clear: both;	
+			}
+
+			section{
+				background: rgba(220, 220, 220, .5);
+			}
+
+			/* Style the footer */
+
+			footer {
+				background-color: #FF6347;
+				text-align: center;
+				color: white;
+			}
+
+			/* Responsive layout - make the two colums/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+				nav, article {
+					width: 100%;
+					height: auto;
+				}
+			}
+		</style>		
+	</head>
+	<body>
+		
+		<header>
+			<h2>Curso Front-End - HTML</h2>	
+		</header>
+
+		<section>
+			
+			<nav>
+				<ul>
+					<li><a href="./homepage.html" target="blanks">Home</a></li>
+					<li><a href="./04-tabelas.html" target="blanks">Tabelas</a></li>
+					<li><a href="./06-Formularios.html" target="blanks">Contato</a></li>
+
+				</ul>
+			</nav>
+
+			<article>
+				<h1>Título Artigo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius efficitur cursus. Suspendisse ut tortor leo. Vestibulum gravida pellentesque elit, ut cursus lacus pretium sit amet. Suspendisse viverra bibendum lobortis. Aenean rutrum lorem imperdiet quam accumsan, quis vulputate quam vulputate. Proin vel varius erat. Nunc finibus congue ultricies. Donec ultricies ut odio sit amet lacinia. Etiam interdum urna quis arcu tristique, in pellentesque est pulvinar. Donec sit amet lacus eget velit vulputate laoreet. Vestibulum nec placerat augue, et lacinia dolor. Nullam in tincidunt ligula. Vivamus tincidunt consequat magna vel pellentesque. Praesent blandit magna in convallis hendrerit.</p>
+
+				<p>Aliquam in magna eu lorem faucibus luctus non vitae neque. Pellentesque et dapibus turpis. Nullam consequat nulla eu massa congue efficitur. Pellentesque in turpis ac mauris aliquam luctus a at quam. Integer venenatis tempus blandit. Nam pretium vitae leo et porttitor. Pellentesque lobortis ac ante non congue. Fusce id sagittis massa. Pellentesque pellentesque leo at nunc rutrum imperdiet. Quisque id nisl sed lorem viverra tincidunt a in orci. Curabitur ullamcorper nulla non ligula laoreet, feugiat fermentum ante venenatis. Etiam sed euismod sapien, sit amet rhoncus dui.</p>
+
+			</article>
+			
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Lucas</p><br>
+		</footer>
+
+	</body>
+</html>
