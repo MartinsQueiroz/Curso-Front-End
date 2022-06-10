@@ -20,7 +20,11 @@
 
  ## Comits
  Informação de alteração
+<<<<<<< HEAD
 - Após testado too o seu código
+=======
+- Após testado todo o seu código
+>>>>>>> main
 - git add*
 - git commit -m 'mensagem'
 - git push (enviar alterações para o repositorio) 
@@ -28,3 +32,18 @@
 
 ## Gitflow
 Fluxo do Git
+<<<<<<< HEAD
+=======
+
+### Branchs 
+São ramificações / versões paralelas
+
+- main / master (vai para a produção, quando o projeto é publicado)
+- develop
+- DOD Definition of Done: critérios de aceite
+- versionamento 0.1.10
+
+### Merge
+- Mescla de branchs
+
+>>>>>>> main
