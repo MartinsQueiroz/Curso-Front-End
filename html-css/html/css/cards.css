@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color:#000000;
+
+}
+
+h1, h2, h3{
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+    
+}
+
+h1{
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    background-color: #000000;
+    font-family: 'Righteous', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#38444d;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a{
+    font-family: 'Righteous', cursive;
+}
+
+a{
+    color: white;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    color: #009;
+}
+
+a:hover{
+    color: #000000;
+}
+
+a:visited{
+    background-color: #B0C4DE;
+}
+
+a:active{
+    background-color: #B0E0E6;
+}
+
+nav{
+    height: 10%;
+}
+
+article{
+    float:none;
+}
+
+input{
+    padding: 1rem;
+}
+
+
+.newspaper{
+    column-count: 3;
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin: 20px
+}
+
+img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+div.polaroid{
+    width: 450px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.9) 0 6px 20px 0 rgba(255, 250, 255, 1);
+    text-align: center;
+}
+
+
+div .polaroid img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    object-fit: contain;
+    
+}
+
+.polaroid{
+    display: flex;
+}
+
+
+div.container{
+    padding: 10px;
+     
+}
+
+.description{
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin: 20px
+}
+
+p{
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    color:white;
+}
+
+
+footer{
+    background-color: #000000;
+}
+
+footer p{
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1rem;
+    line-height: 4;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer a{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    color: royalblue;
+}
+
+@media (min-width: 769px){
+    body{
+        background-image: url("../Imagens/pattern4.png");
+    } 
+}
+
+@media (max-width: 768px){
+    nav ul li {  
+        width:100%;
+        height: auto;
+        text-align: center;
+    }  
+
+    article{
+        background-color: #000000;
+    }
+    
+    .newspaper {
+        column-count: 1;
+        color: white;
+        font-family: 'Righteous', cursive;
+        margin: 20px;
+    }    
+}
+
+@media (max-width: 320px){
+    nav ul li {  
+        width:100%;
+        height: auto;
+        text-align: center;
+        background-color: #000000;
+    }  
+
+    article{
+        background-color: #000000;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    .newspaper {
+        column-count: 1;
+        color: white;
+        font-family: 'Righteous', cursive;
+        margin: 20px 10px 20px 10px;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+    
+    div.polaroid{
+        width: 300px;
+    }
+
+    .polaroid{
+        align-items:center;
+        padding: 76px;
+        float: right;
+    }
+
+    footer p{
+        text-align: center;
+    }
+    
+}
+.polaroid{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.polaroid div{
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0;
+}
+
+*{
+box-sizing: border-box;
+}
+
+.polaroid{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px;
+float:inherit;
+width: 33.33%;
+
+}
+
+.polaroid div{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 30px;
+}
