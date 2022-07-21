@@ -19,8 +19,9 @@ body{
     display: block;
     float: left;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header{
@@ -64,6 +65,22 @@ p{
     line-height: 1.4;
     color: #333;
 }
+
+img{
+    max-width: 100%;
+    width: auto;
+
+}
+
+#tenho-interesse{
+    background-color: #bcdefc;
+    width: 100%;
+}
+
+#tenho-interesse form, .cog-form__container{
+    background-color: #bcdefc !important;
+}
+
 
 ol{
     margin-left: 30px;
@@ -134,5 +151,3 @@ footer small{
     font-size: 80%;
     display: block;
 }
-
-
