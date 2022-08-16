@@ -16,7 +16,7 @@ body{
 
 .main-container {
     display: block;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -24,10 +24,10 @@ body{
 .container{
     display: block;
     float: left;
-    padding: 20px;
-    max-width: 100%;
+    padding: 0px;
     margin: 0 auto;
     max-width: 1198px;
+    width: 98%;
 }
 
 .formulário {
@@ -164,12 +164,12 @@ footer small{
 }
 
 #tenho-interesse{
-    background-color: #bcdefc;
+    background-color: #fff;
     width: 100%;
 }
 
 #tenho-interesse form, .cog-form__container{
-    background-color: #bcdefc !important;
+    background-color: #fff !important;
     
 }
 
@@ -191,4 +191,92 @@ footer small{
         padding-right: 1%;
     }
 
+}
+
+#banner{
+    background-image: url(../imagens/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+}
+
+.legenda-container{
+    width: 30vw;
+    float: right;
+    margin: 10vh 10vh 0 0;
+}
+
+.legenda{
+    background-color: rgba(255, 255, 255,.6);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+    
+}
+
+.legenda h5,
+.legenda h4 {
+    color: #254159;
+    line-height: 1.5;
+}
+
+.button-cta{
+    border-radius: 25px;
+    display: inline;
+    background-color: rgb(233, 58, 58);
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 2px 2px 4px #333;
+    padding: 10px 15px;
+    width: auto;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#saiba-mais{
+    background-color: #ece7e7;
+    padding: 40px 20px;
+}
+
+#saiba-mais p,
+#saiba-mais img{
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 20px;
+
+}
+
+#saiba-mais .button-cta{
+    float: right;
+    
+}
+
+#faq .button-cta{
+    float: left;
+    margin-bottom: 5rem;
+}
+
+#faq{
+    background-color: #bcdefc;
+    
+}
+
+dl{
+    margin: 20px 0;
+}
+
+dt{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #254159;
+}
+
+dd{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #385874;
 }
