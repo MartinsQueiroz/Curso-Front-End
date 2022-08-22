@@ -173,7 +173,11 @@ footer small{
     
 }
 
-
+@media (max-width: 1200px){
+    .legenda{
+        float: right;
+    }
+}
 
 @media (max-width: 425px){
     section nav,
