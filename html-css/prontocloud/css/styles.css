@@ -291,3 +291,11 @@ dd{
     font-size: 1.4rem;
     color: #385874;
 }
+
+
+@media (min-width: 420px){
+    .button-cta{
+        display: block;
+        float: left;
+    }
+}
