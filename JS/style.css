@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+
+body{
+    color: black;
+    background: #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../html-css/html/Imagens/pattern.png");
+    
+    
+    
+}
+
+input, button {
+    display: block;
+    margin: 10px;
+    border-radius: 20%;
+    border-color: blueviolet;
+    
+}
+
+p{
+    background-color: blueviolet;
+    font-size: 1.6rem;
+    text-align: center;
+}
