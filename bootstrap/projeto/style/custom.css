@@ -1,0 +1,41 @@
+body{
+    background-color:#696969;
+}
+
+h1, h2{
+    font-size: 1.8em;
+    background: linear-gradient(90deg, #000000, #C0C0C0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+section{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+input,
+textarea{
+    margin-bottom: 1rem;
+}
+li a{
+    color: #000 !important;
+}
+li a:hover{
+    color: #DCDCDC !important;
+}
+.card {
+    width: 31%;
+    float: left;
+    margin: .5em;
+}
+.card:hover :not{ 
+    opacity: 0.3;
+}
+.card img:hover{
+    scale: 1.1;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+#vitrine{
+    box-shadow: 8px 8px 8px #FAEA10 !important;
+}

@@ -4,18 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css_style/style.css">
         <title>JavaScript</title>
     </head>
     <body>
 
+        <div class="mensagem"></div>
         <div class="container">
 
-            <form id="formulario-01">
 
-                <input type="text" name="n1" placeholder="digite um número" >
-                <input type="text" name="n2" placeholder="digite um número" >
-                <input type="text" name="n3" placeholder="digite um número" >
-                <input type="text" name="n4" placeholder="digite um número" >
+            <form id="formulario-01">
+                <h2>Calculo de media</h2>
+                <p>Preencha as notas de 0 a 10</p>
+                <input type="text" placeholder="digite um número" class="numero" name="n1"  >
+                <input type="text" placeholder="digite um número" class="numero" name="n2"  >
+                <input type="text" placeholder="digite um número" class="numero" name="n3"  >
+                <input type="text" placeholder="digite um número" class="numero" name="n4"  >
 
                 <button type="submit">Enviar</button>
 
@@ -25,9 +29,22 @@
                 
             </form>
 
+            <form id="formulario-02">
+
+                <h2>Faça seu cadastro</h2>
+                <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome">
+                <input type="text" placeholder="digite seu email" class="obrigatorio" name="email">
+                <input type="text" placeholder="digite seu telefone" class="" name="telefone">
+                <button type="submit">Enviar</button>
+
+                <div id="resultado">
+
+                </div>
+                
+            </form>
         </div>
         
-        <script src="./javascript/script.js"></script>
+        <script type="text/javascript" src="./javascript/script.js"></script>
 
     </body>
 </html>

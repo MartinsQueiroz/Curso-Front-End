@@ -11,7 +11,7 @@
   < menor que 
   > maior que 
   <= menor ou igual
-  >= maios ou igual
+  >= maior ou igual
 
 ## Comparadores lógicos: teste lógico, retorno boleano (true / false)
 ==  Igualdade entre sentenças (valor)
