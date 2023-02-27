@@ -6,6 +6,6 @@ function obterMedia(){
 
     var soma = (a + b); 
 
-    document.getElementById("resultado").innerHTML = "Resultado:" + soma;
+    document.getElementById("resultado").innerHTML = "Resultado: " + soma;
 
 }
