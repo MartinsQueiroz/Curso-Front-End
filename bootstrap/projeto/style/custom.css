@@ -39,3 +39,24 @@ li a:hover{
 #vitrine{
     box-shadow: 8px 8px 8px #FAEA10 !important;
 }
+
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #FAEA10;
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(46, 233, 229, 0.445);
+}
+
