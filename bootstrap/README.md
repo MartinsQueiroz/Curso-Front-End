@@ -83,4 +83,6 @@ https://getbootstrap.com/docs/5.1/components
 - Incrementos
 - Ajustes
 
-## Utilitarios
+# Exercicio
+- incluir carrosel na home antes de sobre
+- completar o cadastro, tornando os campos obrigatorios
