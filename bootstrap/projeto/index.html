@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -15,9 +15,8 @@
 </head>
 
 <body>
-
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col text-bg-transparent p-3">
                     <nav class="navbar bg-body-transparent border border-warning-subtle">
@@ -36,13 +35,35 @@
                 </div>
             </div>
     </header>
+    <section>
+        <div class="container-fluid">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/shirt-1.jpg" class="d-block" alt="Loja fisica">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/shirt-2.jpg" class="d-block" alt="Loja Atendente">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/shirt-3.jpg" class="d-block" alt="Loja Mostruario">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="sobre">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
                     <h1>Sobre nós</h1>
-                    <p>Loja virtual designa uma página na Internet que utiliza software de gerenciamento de pedidos (carrinho de compras ou cesto de compras), na qual empresas oferecem e vendem seus serviços ou produtos!</p>
-                    <p>Os clientes acessam o site, escolhem os artigos para aquisição e recebem estes produtos em casa. Para ser caracterizada como loja virtual, o site deve ter todo o processo feito pela internet, desde a escolha dos produtos até o pagamento. Existem algumas plataformas que permitem alugar uma loja virtual!</p>
+                    <p>Loja virtual designa uma página na Internet que utiliza software de gerenciamento de pedidos
+                        (carrinho de compras ou cesto de compras), na qual empresas oferecem e vendem seus serviços ou
+                        produtos!</p>
+                    <p>Os clientes acessam o site, escolhem os artigos para aquisição e recebem estes produtos em casa.
+                        Para ser caracterizada como loja virtual, o site deve ter todo o processo feito pela internet,
+                        desde a escolha dos produtos até o pagamento. Existem algumas plataformas que permitem alugar
+                        uma loja virtual!</p>
                     <a class="btn btn-md  btn-transparent border border-warning-subtle" href="#contato" id="button
                     ">Contato</a>
                 </div>
@@ -55,7 +76,7 @@
     </section>
 
     <section id="produtos">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <h2>Produtos</h2>
@@ -114,7 +135,7 @@
     </section>
 
     <section id="contato">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h2>Contato</h2>
@@ -373,7 +394,14 @@
     </div>
 
 
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselId')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3000,
+            wrap: true
+        })
+    </script>
 </body>
 
 </html>
