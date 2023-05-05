@@ -2,7 +2,7 @@ body{
     background-color:#696969;
 }
 
-h1, h2{
+h1, h2, h3{
     font-size: 1.8em;
     background: linear-gradient(90deg, #000000, #C0C0C0);
     background-clip: text;

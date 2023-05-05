@@ -26,3 +26,25 @@ textarea.form-control{
 .BTN2{
     height: 60% !important;
 }
+
+.input-group-addon {
+    padding: 6px 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+ }
+ 
+ .input-group-addon i {
+    margin-right: 5px;
+    
+ }
+
+ .form-check-input, .form-check-label{
+    margin-top: 2.5em !important;
+    line-height: 1;
+ }
