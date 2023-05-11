@@ -16,6 +16,16 @@ $(document).ready(function () {
     $('.featured-item a').addClass('btn btn-dark stretch-link');
 
     $('.featured-item:first h4').append('<span class="badge bg-secondary">New</span>');
+    // $('.featured-item:first h4').start('<span class="badge bg-secondary">New</span>');
+    // $('.featured-item:first h4').append('<span class="badge bg-secondary">New</span>');
+    // $('.featured-item:first h4').addClass('active')
+    // $('.featured-item:first h4').removeClass('active')
+    // $('.featured-item:first h4').toggleClass('active')
+    // $('.featured-item:first h4').hide()
+    // $('.featured-item:first h4').show()
+    // $('.featured-item:first h4').fadeIn(x)
+    // $('.featured-item:first h4').fadeOut(x)
+    // $('.featured-item:first h4').css('color', '#ff0000')
 
     $('.featured-item h4').after('Promo')
 
