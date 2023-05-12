@@ -29,5 +29,12 @@ $(document).ready(function () {
 
     $('.featured-item h4').after('Promo')
 
-})
+    $('.featured-item a').on('blur', function(event){
 
+        event.preventDefault();
+        alert('Sem estoque');
+
+    })
+
+    
+})    
