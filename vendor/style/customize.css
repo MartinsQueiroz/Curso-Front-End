@@ -76,11 +76,11 @@ a {
 	z-index: 999;
 	position: absolute;
 	left: 50%;
-	top: 105px;
+	top: 128px;
 	transform: translateX(-50%);
 }
 .navbar-dark .navbar-nav .nav-item {
-	margin: 0px 15px;
+	margin: 2px 15px;
 }
 .navbar-dark .navbar-nav .nav-link {
 	text-transform: uppercase;
@@ -195,7 +195,7 @@ a {
 	background-color: #3a8bcd!important;
 }
 .owl-theme .owl-dots .owl-dot span {
-	background-color: #aaa;
+	background-color: #2e2e2e;
 	width: 8px;
 	height: 8px;
 	display: inline-block;
@@ -737,4 +737,12 @@ a {
 		text-align: left;
 	} 
 
+}
+
+::placeholder{
+	color: #fff;
+}
+
+#email{
+	position: relative;
 }

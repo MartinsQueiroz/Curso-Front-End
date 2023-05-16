@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./jquery-UI/jquery-ui.min.css">
     <link rel="stylesheet" href="./style/customize.css">
-    <title>jQuery</title>
+    <title>ZackStore - Loja</title>
 </head>
 
 <body>
@@ -26,13 +27,13 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
+                        <a class="nav-link" href="#Produtos" rel="produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Destaques">Destaques</a>
+                        <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -89,9 +90,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="caption">
-                            <h2>Verão de chinelos</h2>
+                            <h2>Verão chegou!</h2>
                             <div class="line-dec"></div>
-                            <p>Aproveite as ofertas de toda linha Havaianas e não deixe pra depois.</p>
+                            <p>Aproveite as ofertas da nova linha Havaianas.</p>
                         </div>
                     </div>
                 </div>
@@ -114,48 +115,42 @@
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
                         <div class="featured-item">
-                            <img src="./images/allstar.jpg" style="width: 200px; height: 200px;"
-                                alt="Item 1">
+                            <img src="./images/allstar.jpg" style="width: 200px; height: 200px;" alt="Item 1">
                             <h4>Produto 1</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
 
                         <div class="featured-item">
-                            <img src="./images/casaco-bolsa.jpg" style="width: 200px; height: 200px;"
-                                alt="Item 2">
+                            <img src="./images/casaco-bolsa.jpg" style="width: 200px; height: 200px;" alt="Item 2">
                             <h4>Produto 2</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
 
                         <div class="featured-item">
-                            <img src="./images/salto.jpg" style="width: 200px; height: 200px;"
-                                alt="Item 3">
+                            <img src="./images/salto.jpg" style="width: 200px; height: 200px;" alt="Item 3">
                             <h4>Produto 3</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
 
                         <div class="featured-item">
-                            <img src="./images/sueter.jpg" style="width: 200px; height: 200px;"
-                                alt="Item 4">
+                            <img src="./images/sueter.jpg" style="width: 200px; height: 200px;" alt="Item 4">
                             <h4>Produto 4</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
 
                         <div class="featured-item">
-                            <img src="./images/relogio.jpg" style="width: 200px; height: 200px;"
-                                alt="Item 5">
+                            <img src="./images/relogio.jpg" style="width: 200px; height: 200px;" alt="Item 5">
                             <h4>Produto 5</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
 
                         <div class="featured-item">
-                            <img src="./images/perfume.jpg" style="width: 200px; height: 200px;"
-                                alt="Item 6">
+                            <img src="./images/perfume.jpg" style="width: 200px; height: 200px;" alt="Item 6">
                             <h4>Produto 6</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
@@ -186,6 +181,42 @@
             </div>
         </div>
     </div>
+    <div id="featured" class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Receba novidades</h1>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="main-content">
+                            <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                            <div class="container">
+                                <form action="" id="subscribe" class="form" method="get">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <fieldset>
+                                                <input name="email" type="text" class="form-control" id="email"
+                                                    placeholder="Seu email aqui...">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit"
+                                                    class="button">Inscreva-se</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -231,12 +262,93 @@
         </div>
     </div>
 
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="visually-hidden">
+
+        <form action="post" class="form">
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Name</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Insira seu nome.</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder=""
+                    aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Insira seu e-mail</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Data</label>
+                <input type="text" name="date" id="date" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Insira um tempo válido</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora</label>
+                <input type="text" name="hora" id="hora" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Insira um tempo válido</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Digite seu CEP</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cel" class="form-label">Celular</label>
+                <input type="text" name="cel" id="cel" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Digite o número do seu Contato</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Digite o seu CPF</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+
+    </div>
+
+    <div id="sobre" class="visually-hidden">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam cumque quos harum laudantium
+            ipsum alias, sunt placeat quibusdam odio velit ut blanditiis a neque aliquam natus earum autem illo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam cumque quos harum laudantium
+            ipsum alias, sunt placeat quibusdam odio velit ut blanditiis a neque aliquam natus earum autem illo.</p>
+
+    </div>
+
+
+
 
 
     <script src="./jquery/jquery-3.6.4.min.js"></script>
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="./libs/fontawesome/js/all.min.js"></script>
     <script src="./libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script src="./jquery-mask/jquery.mask.min.js"></script>
+    <script src="./jquery-UI/jquery-ui.min.js"></script>
     <script src="./js/custom.js"></script>
     <script>
         var myCarousel = document.querySelector('#carouselId')
