@@ -150,12 +150,10 @@ $(document).ready(function () {
     })
 
     $('body').on('blur', '#nome', function(){
-
         validate($(this))
     })
 
     $('body').on('blur', '#email', function(){
-
         validate($(this))
     })
 
@@ -165,27 +163,27 @@ $(document).ready(function () {
 
     $('body').on('blur', '#date', function(){
         validate($(this))
-        $('#date').mask('00/00/0000')
+        $(this).mask('00/00/0000');
     })
 
     $('body').on('blur', '#time', function(){
         validate($(this))
-        $('#time').mask('00:00');
+        $(this).mask('00:00');
     })
 
     $('body').on('blur', '#cep', function(){
         validate($(this))
-        $('#cep').mask('00000-000')
+        $(this).mask('00000-000');
     })
 
     $('body').on('blur', '#phone', function(){
         validate($(this))
-        $('#phone').mask('00000-0000');
+        $(this).mask('00000-0000');
     })
 
     $('body').on('blur', '#cpf', function(){
         validate($(this))
-        $('#cpf').mask('000.000.000-00');
+        $(this).mask('000.000.000-00');
     })
 
 
