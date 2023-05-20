@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bibliotecas-->
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./jquery-UI/jquery-ui.min.css">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+
+    <!--Styles-->
     <link rel="stylesheet" href="./style/customize.css">
     <title>ZackStore - Loja</title>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-white bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./images/logo.jpg" alt="Logo"></a>
@@ -182,7 +187,7 @@
         </div>
     </div>
     <div id="featured" class="subscribe-form">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
@@ -228,11 +233,10 @@
                 <div class="col-md-12">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Ajuda</a></li>
-                            <li><a href="#">Politica de Privacidade</a></li>
-                            <li><a href="#">Quer trabalhar com a gente?</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#contato">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -262,8 +266,7 @@
         </div>
     </div>
 
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+
     <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -283,47 +286,50 @@
 
             <div class="mb-3">
                 <label for="nome" class="form-label">Name</label>
-                <input type="text" name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Insira seu nome.</small>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder=""
+                    aria-describedby="helpName">
+                <small id="helpName" class="text-muted">Insira seu nome.</small>
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder=""
-                    aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Insira seu e-mail</small>
+                    aria-describedby="helpEmail">
+                <small id="helpEmail" class="text-muted">Insira seu e-mail</small>
             </div>
 
             <div class="mb-3">
                 <label for="date" class="form-label">Data</label>
-                <input type="text" name="date" id="date" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Insira um tempo válido</small>
+                <input type="text" name="date" id="date" class="form-control" placeholder=""
+                    aria-describedby="helpDate">
+                <small id="helpDate" class="text-muted">Insira um tempo válido</small>
             </div>
 
             <div class="mb-3">
-                <label for="hora" class="form-label">Hora</label>
-                <input type="text" name="hora" id="hora" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Insira um tempo válido</small>
+                <label for="time" class="form-label">Hora</label>
+                <input type="text" name="time" id="time" class="form-control" placeholder=""
+                    aria-describedby="helpTime">
+                <small id="helpTime" class="text-muted">Insira um tempo válido</small>
             </div>
 
             <div class="mb-3">
                 <label for="cep" class="form-label">CEP</label>
-                <input type="text" name="cep" id="cep" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Digite seu CEP</small>
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="" aria-describedby="helpCep">
+                <small id="helpCep" class="text-muted">Digite seu CEP</small>
             </div>
 
             <div class="mb-3">
-                <label for="cel" class="form-label">Celular</label>
-                <input type="text" name="cel" id="cel" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Digite o número do seu Contato</small>
+                <label for="phone" class="form-label">Celular</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder=""
+                    aria-describedby="helpPhone">
+                <small id="helpPhone" class="text-muted">Digite o número do seu Contato</small>
             </div>
 
             <div class="mb-3">
                 <label for="cpf" class="form-label">CPF</label>
-                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Digite o seu CPF</small>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="" aria-describedby="helpCpf">
+                <small id="helpCpf" class="text-muted">Digite o seu CPF</small>
             </div>
-
             <button type="submit" class="btn btn-primary">Enviar</button>
 
         </form>
@@ -333,30 +339,25 @@
     <div id="sobre" class="visually-hidden">
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam cumque quos harum laudantium
-            ipsum alias, sunt placeat quibusdam odio velit ut blanditiis a neque aliquam natus earum autem illo.</p>
+            ipsum alias, sunt placeat quibusdam odio velit ut blanditiis a neque aliquam natus earum autem illo.
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam cumque quos harum laudantium
-            ipsum alias, sunt placeat quibusdam odio velit ut blanditiis a neque aliquam natus earum autem illo.</p>
+            ipsum alias, sunt placeat quibusdam odio velit ut blanditiis a neque aliquam natus earum autem illo.
+        </p>
 
     </div>
 
-
-
-
-
+    <!--Bibliotecas-->
     <script src="./jquery/jquery-3.6.4.min.js"></script>
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="./libs/fontawesome/js/all.min.js"></script>
     <script src="./libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
-    <script src="./jquery-mask/jquery.mask.min.js"></script>
-    <script src="./jquery-UI/jquery-ui.min.js"></script>
+    <script src="./jquery-Mask/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="./jquery-ui/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+
+    <!--Scripts-->
     <script src="./js/custom.js"></script>
-    <script>
-        var myCarousel = document.querySelector('#carouselId')
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 3000,
-            wrap: true
-        })
-    </script>
 </body>
+
 
 </html>
