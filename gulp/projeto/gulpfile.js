@@ -7,7 +7,7 @@ const imagemin = require('gulp-imagemin')
 
 function tarefasCSS(cb){
     return gulp.src([
-        './node_modules/bootstrap/dist/css/bootstrap-grid.css', 
+        './node_modules/bootstrap/dist/css/bootstrap.css', 
         './vendor/OwlCarousel2/dist/assets/owl.carousel.css', 
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css', 
         './vendor/jquery-ui/jquery-ui-1.13.2.custom/jquery-ui.css',
