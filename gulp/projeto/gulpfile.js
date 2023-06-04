@@ -1,39 +1,54 @@
+const {series} = require('gulp')
 const gulp = require('gulp')
 const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const imagemin = require('gulp-imagemin')
+const htmlmin = require('gulp-htmlmin')
+const stripJs = require('gulp-strip-comments')
+const stripCss = require('gulp-strip-css-comments')
+const babel = require('gulp-babel')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload
 
-function tarefasCSS(cb){
-    return gulp.src([
+function tarefasCSS(callback){
+    gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.css', 
         './vendor/OwlCarousel2/dist/assets/owl.carousel.css', 
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css', 
         './vendor/jquery-ui/jquery-ui-1.13.2.custom/jquery-ui.css',
         './src/style/customize.css'
     ])
+        .pipe(stripCss())
         .pipe(concat('styles.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min'})) // libs.min.css
         .pipe(gulp.dest('./dist/css'))
+    
+    return callback()
 }
 
-function tarefasJS(){
-    return gulp.src([
+function tarefasJS(callback){
+    gulp.src([
         './node_modules/jquery/dist/jquery.js', 
         './node_modules/bootstrap/dist/js/bootstrap.js', 
         './node_modules/@fortawesome/fontawesome-free/js/fontawesome.js', 
         './vendor/OwlCarousel2/dist/owl.carousel.js', 
         './vendor/jquery-mask/jQuery-Mask-Plugin-master/dist/jquery.mask.js', 
-        './vendor/jquery-ui/jquery-ui-1.13.2.custom/jquery-ui.js', 
+        //'./vendor/jquery-ui/jquery-ui-1.13.2.custom/jquery-ui.js', 
         './src/js/custom.js'
     ])
-        
-        .pipe(concat('scripts.js'))
-        .pipe(uglify())
-        .pipe(rename({ suffix: '.min'})) // libs.min.js
-        .pipe(gulp.dest('./dist/js'))
+        .pipe(babel({
+            comments: false,
+            presets: ['@babel/env']         // remove comentários
+        }))                                  
+        .pipe(concat('scripts.js'))         // mescla arquivos
+        .pipe(uglify())                     // minifica css
+        .pipe(rename({ suffix: '.min'}))    // style.min.css
+        .pipe(gulp.dest('./dist/js'))       // cria arquivo em novo diretorio
+
+    return callback()
 }
 
 function tarefasImagem(){
@@ -53,6 +68,29 @@ function tarefasImagem(){
     .pipe(gulp.dest('./dist/images'))
 }
 
+function tarefasHTML(callback){
+    gulp.src('./src/**/*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('./dist'))
+
+    return callback()
+}
+
+gulp.task('serve', function(){
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch('./src/**/*').on('change', process) // repete o processo quando alterar algo em src
+    gulp.watch('./src/**/*').on('change', reload)
+   
+})
+
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, )
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+
+exports.default = process
