@@ -1,3 +1,4 @@
+@charset "UTF-8"; /*Instrução para o navegador exibir a página corretamente independentemente do idioma em que foi escrita.*/
 * {
   border: 0;
   margin: 0;
@@ -38,7 +39,7 @@ img {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2;
+  font-size: 1.2rem;
   color: #444;
 }
 
@@ -71,34 +72,34 @@ footer {
   background-color: #ddd;
 }
 
-.blocks {
+.cars {
   padding: 3rem 0;
 }
-.blocks h2 {
+.cars h2 {
   color: #F00;
 }
-.blocks ul {
+.cars ul {
   list-style: none;
-  font-size: 1.2;
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   height: 250px;
   padding: 1rem 0;
   width: 100%;
 }
-.blocks li {
+.cars li {
   color: #999;
   display: block;
   margin: 1.5rem auto;
   width: 30%;
 }
-.blocks li .img-container {
+.cars li .img-container {
   display: block;
   height: 200px;
   overflow: hidden;
   width: 100%;
 }
-.blocks li a {
+.cars li a {
   background-color: #F00;
   border-radius: 5px;
   color: white;
@@ -113,8 +114,20 @@ footer {
 .cars h2 {
   color: #999;
 }
+.cars .destacks {
+  border: 1px solid #F00;
+  background-color: #222;
+}
 .cars li {
-  color: #222;
+  border: 1px solid #444;
+  background-color: #ddd;
+  color: #999;
+  display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
 }
 .cars li a {
   background-color: #444;
@@ -132,7 +145,7 @@ footer {
 }
 .destack h2 {
   float: left;
-  font-size: 1.2;
+  font-size: 1.2rem;
   margin-left: 1.5rem;
   margin-top: 1.5rem;
 }
