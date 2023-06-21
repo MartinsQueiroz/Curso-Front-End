@@ -1,20 +1,17 @@
 @mixin theme($theme: $color-01, $bg: $color-04){
     border: 1px solid $theme;
     background-color: $bg;
+    box-shadow: 0 0 1px rgba($color-default, .25);
 }
 
 .cars {
-    @extend %blocks;
-    h2 {
+
+    &__title {
         color: $color-02;
     }
 
-    .destacks{
-        @include theme;
-    }
-
-    li {
-        @include theme($theme: $color-default, $bg: $bg-color);
+    &__item {
+        @include theme($theme: #ccc, $bg: #fff);
         color: $color-02;
         display: flex;
         float: left;
@@ -22,8 +19,13 @@
         justify-content: center;
         align-items: baseline;
         flex-flow: column;
-        a {
-            background-color: $color-default;
+
+        &--destack{
+            @include theme;
         }
+    }
+
+    &__button {
+        background-color: $color-default;
     }
 }

@@ -1,4 +1,4 @@
-@charset "UTF-8"; /*Instrução para o navegador exibir a página corretamente independentemente do idioma em que foi escrita.*/
+@charset "UTF-8";
 * {
   border: 0;
   margin: 0;
@@ -14,11 +14,14 @@ p {
   display: block;
 }
 
+article,
 header,
 section,
 footer {
+  color: #222;
   display: block;
-  margin: 0 auto;
+  float: left;
+  margin: auto;
   width: 100%;
   padding: 4rem 0;
 }
@@ -29,7 +32,12 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 83.3333333333%;
+  }
 }
 
 img {
@@ -67,60 +75,100 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  margin: 1.5rem;
+}
+
 header,
 footer {
   background-color: #ddd;
 }
 
-.cars {
+.blocks {
+  /* 
+     BEM CSS
+     - Block
+     - Element 
+     - Modifier
+
+     - Padrão do Projeto / Design Patterns 
+
+     Exemplo: 
+     .cars__title
+     .cars__list
+     .cars__item
+     .cars__item--destack 
+     .cars__button
+     .cars__img-container
+
+     .block__element--modifier
+
+  */
   padding: 3rem 0;
 }
-.cars h2 {
+.blocks__title {
   color: #F00;
 }
-.cars ul {
-  list-style: none;
+.blocks__list {
+  list-style-type: none;
   font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  height: 250px;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 3.5rem auto;
   padding: 1rem 0;
   width: 100%;
 }
-.cars li {
+.blocks__item {
   color: #999;
   display: block;
-  margin: 1.5rem auto;
-  width: 30%;
+  margin: 3.5rem 0.75rem;
+  text-align: center;
+  width: calc(33% - 15px);
 }
-.cars li .img-container {
+@media (max-width: 999px) {
+  .blocks__item {
+    width: calc(99% - 30px);
+  }
+}
+.blocks__img-container {
   display: block;
-  height: 200px;
+  height: 15rem;
   overflow: hidden;
   width: 100%;
 }
-.cars li a {
+@media (max-width: 999px) {
+  .blocks__img-container {
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #444;
+  font-size: 1.5rem;
+  padding: 3.5rem;
+}
+.blocks__description--destack {
+  color: #999;
+}
+.blocks__button {
   background-color: #F00;
   border-radius: 5px;
   color: white;
-  display: block;
+  display: inline-block;
   font-size: 2.2rem;
   margin: 3rem auto 1.5rem;
-  padding: 4px 8px;
+  padding: 0.5rem 3rem;
   text-align: center;
   text-decoration: none;
 }
 
-.cars h2 {
+.cars__title {
   color: #999;
 }
-.cars .destacks {
-  border: 1px solid #F00;
-  background-color: #222;
-}
-.cars li {
-  border: 1px solid #444;
-  background-color: #ddd;
+.cars__item {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(68, 68, 68, 0.25);
   color: #999;
   display: flex;
   float: left;
@@ -129,32 +177,37 @@ footer {
   align-items: baseline;
   flex-flow: column;
 }
-.cars li a {
+.cars__item--destack {
+  border: 1px solid #F00;
+  background-color: #222;
+  box-shadow: 0 0 1px rgba(68, 68, 68, 0.25);
+}
+.cars__button {
   background-color: #444;
 }
 
 .destack {
   background-color: #222;
-  padding: 1.5rem;
+  padding: 3.5rem;
 }
-.destack h1 {
+.destack__title {
   color: #F00;
   float: left;
   font-size: 3rem;
   margin-top: 0;
 }
-.destack h2 {
+.destack__subtitle {
   float: left;
   font-size: 1.2rem;
-  margin-left: 1.5rem;
+  margin-left: 3.5rem;
   margin-top: 1.5rem;
 }
-.destack img {
+.destack__imgage {
   width: 100%;
   height: auto;
-  margin: 1.5rem auto;
+  margin: 3.5rem auto;
 }
-.destack p {
+.destack__description {
   font-size: 1.5rem;
   color: #F00;
   padding: 2rem 0;

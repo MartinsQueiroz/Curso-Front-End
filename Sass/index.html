@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Módulo Sass</title>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -18,32 +17,35 @@
     <section>
         <div class="destack">
             <div class="container">
-                <h1>Audi A5</h1>
-                <h2>Destaque</h2>
-                <img src="./images/photo-A5.jpg" alt="Foto Pixabay">
-                <p>Carro seminovo, 4 portas, completo com ar-condicionado vidro e travas elétricas</p>
+                <h1 class="destack__title">Audi A5</h1>
+                <h2 class="destack__subtitle">Destaque</h2>
+                <img class="destack__image" src="./images/photo-A5.jpg" alt="Foto Pixabay">
+                <p class="destack__description">Carro seminovo, 4 portas, completo com ar-condicionado vidro e travas elétricas</p>
             </div>
             <div class="container">
-                <div class="cars">
-                    <h2>Ver Carros</h2>
-                    <ul>
-                        <li class="destacks">
-                            <div class="img-container">
+                <div class="blocks cars">
+                    <h2 class="blocks__title cars__title">Ver Carros</h2>
+                    <ul class="blocks__list cars__list">
+                        <li class="blocks__item cars__item cars__item--destack">
+                            <div class="blocks__img-container cars__img-container">
                                 <img src="./images/interior-A5.jpg" alt="Foto Mike em Pexels">
                             </div>
-                            <a href="#01">Ver mais</a>
+                            <p class="blocks__description blocks__description--destack">Interior de couro autentico, estilizado e personalizado exclusivamente</p>
+                            <a class="blocks__button cars__button" href="#01">Ver mais</a>
                         </li>
-                        <li>
-                            <div class="img-container">
+                        <li class="blocks__item cars__item cars__item--destack">
+                            <div class="blocks__img-container cars__img-container">
                                 <img src="./images/velocimetro.jpg" alt="Foto Pixabay Pixels">
                             </div>
-                            <a href="#02">Ver mais</a>
+                            <p class="blocks__description blocks__description--destack">Painel interativo e altamente inovador com o melhor da tecnologia Audi</p>
+                            <a class="blocks__button cars__button" href="#02">Ver mais</a>
                         </li>
-                        <li>
-                            <div class="img-container">
+                        <li class="blocks__item cars__item cars__item--destack">
+                            <div class="blocks__img-container cars__img-container">
                                 <img src="./images/faixada-audi.jpg" alt="Foto Pexels Torsten">
                             </div>
-                            <a href="#03"> Ver mais</a>
+                            <p class="blocks__description blocks__description--destack">Venha a uma concessionária Audi para fazer seu test-drive</p>
+                            <a class="blocks__button cars__button" href="#03">Ver mais</a>
                         </li>
                     </ul>
                 </div>
@@ -51,9 +53,9 @@
     </section>
     <footer>
         <div class="container">
-            <p>&copy; Desenvolvido por Lucas.</p>
+            <p> &copy; Desenvolvido por Lucas.</p>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
