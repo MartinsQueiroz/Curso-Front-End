@@ -6,38 +6,59 @@ $color-bg-default: #a9f;
 $color-bg-boxes: #FD3;
 $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
+$font-size-nav: 1.4rem;
 
 @import 'fonts';
+@import 'nav';
+
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: $color-primary;
     font-family: $font-default;
+    margin: 0;
 }
 
 h1 {
     color: $font-color-primary;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 0;
+}
+
+article{
+    h1 {
+        color: $color-secondary;
+        font-size: 3rem;
+        text-align: left;
+    }
 }
 
 h2 {
-    color: $color-bg-boxes;
+    color: $font-color-primary;
     font-family: 'penguin', 'Verdana, sans-serif';
+    font-weight: 700;
     font-size: 2rem;
     margin-top: 4rem;
-    
+    text-shadow: 1px 2px 8px #FFFFFF;
+
 }
 
+#root,
 header,
 section,
 footer {
     display: block;
     float: left;
     width: 100%;
+}
+
+section {
+    padding: 4rem 0;
+    margin: 0;
 }
 
 .container {
@@ -49,11 +70,17 @@ footer {
   
 }
 
-#sobre {
-    background-color: white;
-}
+@import 'animation';
+@import 'header';
+@import 'sobre';
+@import 'produtos';
+@import 'vitrine';
+@import 'steps';
+@import 'footer';
 
 
 
-@import '_vitrine'
-    
+
+
+
+

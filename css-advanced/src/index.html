@@ -3,77 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <title>Hype agency</title>
 </head>
 <body>
     <div id="root">
         <header>
             <div class="container">
-                <h2><img src="./assets/images/logo.png" alt="logo da empresa"></h2>
-                <nav>
-                    <a href="#sobre"></a>
-                    <a href="#produtos"></a>
-                    <a href="#contato"></a>
+                <h2 class="logo">
+                    <img src="./assets/images/logo-lance.png" alt="Hype agency">
+                </h2>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#como-trabalhamos">Como gostamos de trabalhar</a>
                 </nav>
                 <div class="hero">
                     <h1>Veja como acelerar o crescimento do seu negócio</h1>
                 </div>
-        
             </div>
         </header>
         <section id="sobre">
             <div class="container">
-                <aside>
-                   <div id="localizacao"></div> 
-                </aside>
                 <article>
-                    <h1>sobre nós</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sit at minima in magnam deleniti repudiandae. Alias nobis repudiandae aliquam nihil fugiat iste dolores, provident animi, magni molestias voluptate consequuntur?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, corrupti beatae fugit impedit ad a voluptas perspiciatis rerum et quod unde possimus ab iusto dicta nam placeat consequuntur. Architecto, magni.</p>
+                    <h1>Sobre nós</h1>
+                    <p>Somos uma startup, com foco em crescimento publicitario e marketing digital, estamos no mercado desde 2022, trazendo uma proposta inovadora e futuristica para você iniciar seu negócio do zero até se consolidar como marca!</p>
+                    <p>Trabalhamos toda parte de identidade visual e digitalização do seu negócio, como criaçao de site e App. Com a nossa ajuda vocâ dará um "HYPE" no seu negócio!</p>
                 </article>
             </div>
         </section>
         <section id="produtos">
             <div class="container">
-                <h1>Catálogo</h1>
-                <div class="vitrine">
-                   <div class="vitrine__item">
-                    <h3 class="vitrine__produto">Produto 1</h3>
-                    <div src="" alt="" class="vitrine__image"></div>
-                    <p class="vitrine__desc"></p>
-                    <a href="" class="vitrine__button">Ver detalhes</a>
-                   </div>
-                   <div class="vitrine__item">
-                    <h3 class="vitrine__produto">Produto 2</h3>
-                    <div src="" alt="" class="vitrine__image"></div>
-                    <p class="vitrine__desc"></p>
-                    <a href="" class="vitrine__button">Ver detalhes</a>
-                   </div>
-                   <div class="vitrine__item">
-                    <h3 class="vitrine__produto">Produto 3</h3>
-                    <div src="" alt="" class="vitrine__image"></div>
-                    <p class="vitrine__desc"></p>
-                    <a href="" class="vitrine__button">Ver detalhes</a>
-                   </div>
-                   <div class="vitrine__item">
-                    <h3 class="vitrine__produto">Produto 4</h3>
-                    <div src="" alt="" class="vitrine__image"></div>
-                    <p class="vitrine__desc"></p>
-                    <a href="" class="vitrine__button">Ver detalhes</a>
-                   </div>
-                </div>
+                <article>
+                    <h1>Catálogo</h1>
+                    <div class="vitrine">
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-logo.png" alt="criação de logotipo">
+                            </div>
+                            <h3 class="vitrine__produto">Logo</h3>
+                            <p class="vitrine__desc">Design profissional de logos para você iniciar sua identidade visual</p>
+                            <a href="#produto-logo" class="vitrine__button">Quero</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-timbrado.png" alt="produto timbrado">
+                            </div>
+                            <h3 class="vitrine__produto">Papel timbrado</h3>
+                            <p class="vitrine__desc">Aplicação de identidade visual em documentos do dia a dia.</p>
+                            <a href="#produto-timbrado" class="vitrine__button">Quero</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-cartao.png" alt="Cartão de visitas">
+                            </div>
+                            <h3 class="vitrine__produto">Cartão dde visitas</h3>
+                            <p class="vitrine__desc"> Layout do seu cartão de visita com Design profissional.  </p>
+                            <a href="#produto-cartao" class="vitrine__button">Quero</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-site.png" alt="Produto site">
+                            </div>
+                            <h3 class="vitrine__produto">Site institucional</h3>
+                            <p class="vitrine__desc">Desenvolvimento de site com a sua identidade visual aplicada.</p>
+                            <a href="#produto-site" class="vitrine__button">Quero</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-        <section id="contato">
+
+        <section id="como-trabalhamos">
             <div class="container">
-                <h1>Contato</h1>
-                <form action="" class="contato">
-                    <input type="text" placeholder="Nome" class="contato__input">
-                    <input type="text" placeholder="Email" class="contato__input">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <article>
+                    <h1>Como trabalhamos</h1>
+                    <div class="steps">
+                        <div class="steps__item">
+                            <img src="./assets/images/escolha.png" alt="Escolha o item">
+                            <h3>Faça sua ecolha.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/lance.png" alt="Pague o item">
+                            <h3>Realize o pagamento.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/trabalhamos.png" alt="trabalhamos">
+                            <h3>Após confirmar o pagamento, começamos os trabalhos.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/voce-aprova.png" alt="Você aprova">
+                            <h3>Em poucos dias você receberá o material para avaliar.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/lancamos.png" alt="decole seu negocio">
+                            <h3>Se estiver tudo ok, você já pode decolar com seu negócio.<span>=)</span></h3>
+                        </div>
+                    </div>
+                </article> 
             </div>
-           
         </section>
         <footer>
             <div class="container">
