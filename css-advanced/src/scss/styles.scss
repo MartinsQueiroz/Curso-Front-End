@@ -10,7 +10,17 @@ $font-size-nav: 1.4rem;
 
 @import 'fonts';
 @import 'nav';
+@import 'grid';
 
+@viewport{
+    width: device-width;
+    zoom: 1;
+}
+
+
+* {
+    box-sizing: border-box; // Considera o padding e border como parte do cálculo total da largura e altura
+}
 
 html {
     font-size: 62.5%;
@@ -21,6 +31,7 @@ body {
     background-color: $color-primary;
     font-family: $font-default;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 h1 {
@@ -61,14 +72,49 @@ section {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+//SASS
 .container {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
 
+    @media (max-width: 768px){
+        max-width: 99%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            width: 280px;
+            align-items: center;
+        }
+        
+    }
+    
   
 }
+
+
+/* 
+Com CSS
+
+    @media (min-width: 1024px){
+
+    .container{
+       background-color: coral;
+   }
+    
+ }
+
+*/
 
 @import 'animation';
 @import 'header';
@@ -77,6 +123,7 @@ section {
 @import 'vitrine';
 @import 'steps';
 @import 'footer';
+@import 'responsive'
 
 
 

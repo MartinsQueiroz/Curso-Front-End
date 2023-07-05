@@ -40,3 +40,5 @@ npm run dev
 - http://css3generator.com/
 - https://www.fontsquirrel.com/tools/webfont-generator
 - https://www.dafont.com/pt/penguin-2.font?text=hype&back=theme
+
+

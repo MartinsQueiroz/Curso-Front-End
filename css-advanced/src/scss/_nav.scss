@@ -1,9 +1,10 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 295px;
+    width: 280px;
     align-items: center;
 
+   
     &__item {
         color: $font-color-primary;
         font-size: $font-size-nav;

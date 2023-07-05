@@ -7,25 +7,68 @@
     <title>Hype agency</title>
 </head>
 <body>
+   <!-- grid view para orientação
+    
+    <div class="grid">
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+    </div> --> 
+
+
     <div id="root">
         <header>
             <div class="container">
                 <h2 class="logo">
                     <img src="./assets/images/logo-lance.png" alt="Hype agency">
                 </h2>
-                <nav class="nav">
+                <nav class="nav col-4">
                     <a class="nav__item" href="#sobre">Sobre</a>
                     <a class="nav__item" href="#produtos">Produtos</a>
                     <a class="nav__item" href="#como-trabalhamos">Como gostamos de trabalhar</a>
                 </nav>
-                <div class="hero">
+                <div class="hero col-12">
+                    <img src="./assets/images/banner-lance-me.png" alt="banner lance">
                     <h1>Veja como acelerar o crescimento do seu negócio</h1>
                 </div>
             </div>
         </header>
         <section id="sobre">
             <div class="container">
-                <article>
+                <article class="col-12">
                     <h1>Sobre nós</h1>
                     <p>Somos uma startup, com foco em crescimento publicitario e marketing digital, estamos no mercado desde 2022, trazendo uma proposta inovadora e futuristica para você iniciar seu negócio do zero até se consolidar como marca!</p>
                     <p>Trabalhamos toda parte de identidade visual e digitalização do seu negócio, como criaçao de site e App. Com a nossa ajuda vocâ dará um "HYPE" no seu negócio!</p>
@@ -34,10 +77,10 @@
         </section>
         <section id="produtos">
             <div class="container">
-                <article>
+                <article class="col-12">
                     <h1>Catálogo</h1>
                     <div class="vitrine">
-                        <div class="vitrine__item">
+                        <div class="vitrine__item col-12">
                             <div class="vitrine__image">
                                 <img src="./assets/images/produto-logo.png" alt="criação de logotipo">
                             </div>
@@ -45,7 +88,7 @@
                             <p class="vitrine__desc">Design profissional de logos para você iniciar sua identidade visual</p>
                             <a href="#produto-logo" class="vitrine__button">Quero</a>
                         </div>
-                        <div class="vitrine__item">
+                        <div class="vitrine__item col-12">
                             <div class="vitrine__image">
                                 <img src="./assets/images/produto-timbrado.png" alt="produto timbrado">
                             </div>
@@ -53,7 +96,7 @@
                             <p class="vitrine__desc">Aplicação de identidade visual em documentos do dia a dia.</p>
                             <a href="#produto-timbrado" class="vitrine__button">Quero</a>
                         </div>
-                        <div class="vitrine__item">
+                        <div class="vitrine__item col-12">
                             <div class="vitrine__image">
                                 <img src="./assets/images/produto-cartao.png" alt="Cartão de visitas">
                             </div>
@@ -61,7 +104,7 @@
                             <p class="vitrine__desc"> Layout do seu cartão de visita com Design profissional.  </p>
                             <a href="#produto-cartao" class="vitrine__button">Quero</a>
                         </div>
-                        <div class="vitrine__item">
+                        <div class="vitrine__item col-12">
                             <div class="vitrine__image">
                                 <img src="./assets/images/produto-site.png" alt="Produto site">
                             </div>
@@ -76,28 +119,28 @@
 
         <section id="como-trabalhamos">
             <div class="container">
-                <article>
+                <article class="col-12">
                     <h1>Como trabalhamos</h1>
                     <div class="steps">
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img src="./assets/images/escolha.png" alt="Escolha o item">
                             <h3>Faça sua ecolha.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img src="./assets/images/lance.png" alt="Pague o item">
                             <h3>Realize o pagamento.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img src="./assets/images/trabalhamos.png" alt="trabalhamos">
                             <h3>Após confirmar o pagamento, começamos os trabalhos.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img src="./assets/images/voce-aprova.png" alt="Você aprova">
                             <h3>Em poucos dias você receberá o material para avaliar.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img src="./assets/images/lancamos.png" alt="decole seu negocio">
-                            <h3>Se estiver tudo ok, você já pode decolar com seu negócio.<span>=)</span></h3>
+                            <h3>Se estiver tudo ok, você já pode decolar com seu negócio.</h3>
                         </div>
                     </div>
                 </article> 
@@ -105,7 +148,7 @@
         </section>
         <footer>
             <div class="container">
-                <p>Loja x &copy; Todos o direitos reservados. <br>
+                <p class="col-12">Loja x &copy; Todos o direitos reservados. <br>
                     <small>Desenvolvido por Lucas</small></p>
             </div>
         </footer>
