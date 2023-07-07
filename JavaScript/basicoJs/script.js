@@ -1,12 +1,14 @@
-function calcularMedia(notas){
+// na função foi adotado uma arrow function substituindo a necessidade de repetir a função
 
-    let soma = 0
+const calcularMedia = ( notas ) => {
 
-    for(c = 0; c < notas.length; c++) {
+    let soma = 0;
+
+    for( let c = 0; c < notas.length; c++) {
         soma += notas[c];      
     }
 
-    media = soma / notas.length
+    const media = soma / notas.length
 
     return media;
 }
@@ -23,8 +25,8 @@ function aprovacao( notas ){
 }
 
 
-// função recursiva
-/*function contagemRegressiva(numero){
+// função recursiva - na função foi adotado uma arrow function
+ contagemRegressiva = (numero) => {
 
     console.log(numero);
 
@@ -35,7 +37,7 @@ function aprovacao( notas ){
 }
 
 contagemRegressiva(10);
-*/
+
 
 // Eventos
 document.getElementById('formulario-01').addEventListener('submit', function(evento){
@@ -76,7 +78,7 @@ document.getElementById('formulario-01').addEventListener('submit', function(eve
 });
 
 function validaCampo(elemento){
-    elemento.addEventListener('focusout', function(event){
+    elemento.addEventListener('focusout', (event) => {
 
         event.preventDefault();
 
@@ -95,13 +97,16 @@ function validaCampo(elemento){
 
 }
 
-function validaCampoNumerico(elemento){
+class ValidaCampoNumerico { // a função anterior foi adpatada e transformada em uma classe, 'bind' é usado para controlar e definir o valor de 'this'
+    constructor(elemento){
+        this.elemento = elemento
+        this.addEventListener('focusout', this.validarCampo.bind(this));
+    }
 
-    elemento.addEventListener('focusout', function(event){
-        
+    validarCampo(event){
         event.preventDefault();
 
-        console.log(this.value);    
+        console.log(this.elemento.value);    
         
         if(this.value != "" && this.value.match(/[0-9]*/) && this.value >= 0 && this.value <= 10){
             document.querySelector('.mensagem').innerHTML = "";
@@ -114,7 +119,7 @@ function validaCampoNumerico(elemento){
             return false;
            
         }   
-    });
+    }
 }
 
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
