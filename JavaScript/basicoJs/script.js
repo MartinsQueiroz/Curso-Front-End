@@ -97,7 +97,8 @@ function validaCampo(elemento){
 
 }
 
-class ValidaCampoNumerico { // a função anterior foi adpatada e transformada em uma classe, 'bind' é usado para controlar e definir o valor de 'this'
+// a função anterior foi adpatada e transformada em uma classe, 'bind' é usado para controlar e definir o valor de 'this'
+class ValidaCampoNumerico { 
     constructor(elemento){
         this.elemento = elemento
         this.addEventListener('focusout', this.validarCampo.bind(this));
