@@ -18,3 +18,15 @@
 - Frameworks
 - De fato são "funções especiais"
 - Método construtor: construtor
+
+# Manipulação de Dados
+
+- Javascript trabalha com tipagem dinâmica (números, textos, strings, objetos, arrays)
+ `let x = 0` 
+ `x = 'a'` 
+
+ - Arrays[] são uma estrutura de dados que permite que voce agrupe itens. Exp: meses do ano, carros, frutas, etc...
+
+
+ # Export e Import 
+ - São recursos do EcmaScript Modules (O Javascript nativamente, por conta da forma que é executado, não importa alguns recursos por padrão)

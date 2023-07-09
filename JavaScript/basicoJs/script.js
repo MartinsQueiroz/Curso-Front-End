@@ -15,7 +15,7 @@ const calcularMedia = ( notas ) => {
 
 let media; //escopo global 
 
-function aprovacao( notas ){
+const aprovacao = ( notas ) => {
 
     let media = calcularMedia( notas ); //escopo local 
 
@@ -25,18 +25,20 @@ function aprovacao( notas ){
 }
 
 
-// função recursiva - na função foi adotado uma arrow function
- contagemRegressiva = (numero) => {
+/*
+* função recursiva - na função foi adotado uma arrow function
+* contagemRegressiva = (numero) => {
 
-    console.log(numero);
+*   console.log(numero);
 
-    let proximoNumero = numero - 1;
+*   let proximoNumero = numero - 1;
 
-    if(proximoNumero > 0)
-        contagemRegressiva(proximoNumero);
-}
+*   if(proximoNumero > 0)
+*       contagemRegressiva(proximoNumero);
+ }
 
-contagemRegressiva(10);
+* contagemRegressiva(10);
+*/ 
 
 
 // Eventos
@@ -46,9 +48,9 @@ document.getElementById('formulario-01').addEventListener('submit', function(eve
     evento.stopPropagation();
 
     /*
-    if(this.getAttribute('class').match(/'erro'/) ){
-        return false;
-    }
+    *if(this.getAttribute('class').match(/'erro'/) ){
+    *    return false;
+     }
     */
    
     let dados = new FormData(this);
@@ -66,7 +68,7 @@ document.getElementById('formulario-01').addEventListener('submit', function(eve
         }
 
         //adiciona itens no array
-        /*   notas.push(parseInt(dados.get(key)));   */
+        //  notas.push(parseInt(dados.get(key)));  
     }
 
     console.log(notas);
@@ -77,7 +79,7 @@ document.getElementById('formulario-01').addEventListener('submit', function(eve
     
 });
 
-function validaCampo(elemento){
+const validaCampo = (elemento) => {
     elemento.addEventListener('focusout', (event) => {
 
         event.preventDefault();
