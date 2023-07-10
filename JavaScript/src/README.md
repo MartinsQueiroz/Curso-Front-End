@@ -19,13 +19,22 @@
 - De fato são "funções especiais"
 - Método construtor: construtor
 
-# Manipulação de Dados
+## Arrow Functions
+- Multiplos parâmetros: (p1, p2, ..., pN) => {expressão}
+- Expressão / Algoritmo simples: (p1, p2) => expressão
+- Único parâmetro: p1 => {expressão}
 
+# Manipulação de Dados
 - Javascript trabalha com tipagem dinâmica (números, textos, strings, objetos, arrays)
  `let x = 0` 
  `x = 'a'` 
 
- - Arrays[] são uma estrutura de dados que permite que voce agrupe itens. Exp: meses do ano, carros, frutas, etc...
+ ## Arrays[] 
+ - (são uma estrutura de dados que permite que voce agrupe itens. Exp: meses do ano, carros, frutas, etc...)
+ - filter
+ - forEach
+ - reduce
+ - map
 
 
  ## Export e Import 
@@ -33,7 +42,19 @@
 
 
  ## TypeScript
+ https://www.typescriptlang.org/
+
+ ### Tipos de dados
  - boolean
  - string ("Texto", 'exemplo')
  - arrays
  - tuple
+
+
+ ## JS Linter / ES List
+
+
+ ## Frameowrk
+ - React
+ - Vue.js (https://vuejs.org/)
+ - Angular (https://angular.io/)

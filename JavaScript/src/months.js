@@ -12,7 +12,7 @@ let months = [
 
 },
 { 
-    month:'março',
+    month:'Março',
     color: 'verde',
     days: 31
 
