@@ -28,5 +28,12 @@
  - Arrays[] são uma estrutura de dados que permite que voce agrupe itens. Exp: meses do ano, carros, frutas, etc...
 
 
- # Export e Import 
+ ## Export e Import 
  - São recursos do EcmaScript Modules (O Javascript nativamente, por conta da forma que é executado, não importa alguns recursos por padrão)
+
+
+ ## TypeScript
+ - boolean
+ - string ("Texto", 'exemplo')
+ - arrays
+ - tuple
