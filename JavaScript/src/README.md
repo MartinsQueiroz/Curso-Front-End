@@ -41,6 +41,8 @@
  - São recursos do EcmaScript Modules (O Javascript nativamente, por conta da forma que é executado, não importa alguns recursos por padrão)
 
 
+
+
  ## TypeScript
  https://www.typescriptlang.org/
 
