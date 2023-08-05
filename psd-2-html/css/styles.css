@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+}
+
+header {
+    padding: 22px 28px 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 36pt;
+    padding-top: 39px;
+    line-height: 39.6;
+    color: #ffffff !important;
+}
+
+h2 {
+    font-size: 23pt;
+    line-height: 27.6pt;
+
+}
+
+.container {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.container, .container-fluid, .container-lg, 
+.container-md, .container-sm, .container-xl, .container-xxl{
+    padding-left: 0!important;
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial !important;
+    padding: 47px 75px;
+}
+
+.menu ul li {
+    margin: auto calc(34px / 2);
+    
+    
+}
+
+.menu ul li a {
+    font-size: 13px;
+    color: #dc002d;
+    text-decoration: none;
+    
+}
+
+.menu ul li a:hover {
+    color: #333333;
+}
+
+
+.triangulo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+    border-right: 32px solid #dc002d;
+    right: 0;
+}
+
+.vetor {
+    padding-top: 30px;
+}
+
+.footer {
+    background-color: #e8e8e8;
+    padding: 10px;
+    
+}
+
+.text-danger {
+    float: right;
+    font-weight: bold;
+}
+
+.text {
+    float: right;
+}
+
+.btn-saiba-mais {
+    border: 1px solid #dcdcdc;
+    color: #dc002d;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 15.6px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-saiba-mais:hover {
+    color: #333333;
+}
+
+.btn {
+    color: #ffffff!important;
+}
+
+#content {
+    padding: 41px 27px;
+    background-color: #ffffff;
+}
+
+#banner {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #dc002d;
+    color: #ffffff;
+}
+
+#vetor1, #vetor2 {
+    background-color: #333333!important;
+    opacity: .5;
+}
+
+#vetor1:hover {
+    opacity: .8;
+}
+
+#vetor2:hover {
+    opacity: .8;
+}
+
+#content {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    
+}
+
+#icon {
+    padding-top: 28px;
+}
+
