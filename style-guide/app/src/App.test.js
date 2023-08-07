@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('teste titulo', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const testCase = document.querySelector('.App button');
+  expect(testCase).toHaveTextContent(/painel de controle/i);
+});
+
+test('teste titulo 2', () => {
+  render(<App />);
+  const testCase = document.querySelector('.App button');
+  expect(testCase).toHaveTextContent(/painel de controle/i);
 });
