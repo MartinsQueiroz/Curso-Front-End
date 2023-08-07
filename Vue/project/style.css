@@ -1,0 +1,10 @@
+#app{
+    background-color: rgba(54, 54, 54, 0.5);
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2.5rem;
+}

@@ -1,0 +1,60 @@
+header .container{
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+
+        .nav{
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+
+    
+    @media (min-width: 767px) and (max-width: 1024px) {
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            width: 380px;
+            align-items: center;
+        }
+    }
+
+
+
+    .hero {
+        align-items: flex-end;
+        // background-image: url('../assets/images/banner-lance-me.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        justify-content: center;
+        flex-direction: column;
+        height: 45rem;
+        display: flex;
+        padding-bottom: 4rem;
+        overflow: hidden;
+        width: 100%;
+        
+
+        h1 {
+            padding-top: 1rem 0 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (min-width: 767px) and (max-width: 1024px){
+            image {
+                margin-left: -50%;
+                position: relative;
+                width: 230%;
+                max-width: none;
+                margin-right: -68%;
+                margin-top: 90px;
+            }
+
+        }
+        
+    }
+}

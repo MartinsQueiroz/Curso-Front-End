@@ -73,3 +73,17 @@ html {
 </style>
 
 ```
+## Componentes
+- Blocos / Modelos / Templates reutilizaveis
+https://getbootstrap.com/docs/5.1/components
+
+
+## Helpers
+- Funções básicas
+- Incrementos
+- Ajustes
+
+# Exercicio
+- incluir carrosel na home antes de sobre (ok)
+- completar o cadastro, tornando os campos obrigatórios
+- incluir campos: bairro, complemento e telefone
