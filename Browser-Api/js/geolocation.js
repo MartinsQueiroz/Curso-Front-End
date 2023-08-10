@@ -8,7 +8,7 @@ function showLocation(position) {
     const long = position.coords.longitude;
     const lat = position.coords.latitude;
 
-    const url = `https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=${lat},${long}&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed`;
+    const url = `https://maps.google.com/maps?q=${lat},${long}&t=&z=10&ie=UTF8&iwloc=&output=embed`;
 
     window.open(url, 'map')
 }

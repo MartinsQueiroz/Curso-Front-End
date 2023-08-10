@@ -21,11 +21,18 @@ function drop(event) {
     dropzone.appendChild(draggableElement);
 
     event.dataTransfer.clearData()
+
 }
 
-//window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('resize', function(){
 
-    //const drag = document.querySelector('#drag-1');
 
-    //drag.addEventListener('dragstart', dragStart);
-//})
+    if(this.window.innerWidth < 420)
+    console.log('smartphone');
+    else if (this.window.innerWidth < 720)
+    console.log('tablet');
+    else {
+        console.log('desktop');
+    }
+
+})
