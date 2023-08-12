@@ -1,5 +1,6 @@
 import React, {ReactDOM} from "react";
 import './style.css'
+import Switch from '@mui/material/Switch';
 
 export default class Form extends React.Component {
     constructor (props) {
@@ -37,6 +38,7 @@ export default class Form extends React.Component {
 
     render() {
         console.log('Render - exibição')
+        const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
         return <div className="Form">
             <p>
@@ -48,6 +50,7 @@ export default class Form extends React.Component {
             <button onClick={this.handleClick}>
                 {this.state.isToggleOn? 'Ligado' : 'Desligado'}
             </button>
+            <Switch onClick={this.handleClick} {...label} checked={this.state.isToggleOn? true : false} />
         
         </div>
     }
