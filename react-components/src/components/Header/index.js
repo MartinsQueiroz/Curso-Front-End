@@ -3,7 +3,7 @@ import logo from './../../logo.svg'
 
 function Header(props){
 
-    const [count, setCount ]= useState(1);
+    const [ count, setCount ] = useState(1);
     function increaseCount(){
         setCount(count + 1);
         console.log(count);
