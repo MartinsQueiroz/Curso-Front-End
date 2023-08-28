@@ -4,9 +4,8 @@ import Header from './components/Header';
 import Grid from './components/Grid';
 import Form from './components/Form';
 import { getNotes, addNote, removeNote } from './store/actions';
-import './App.css';
 import Calculator from './components/Calculator';
-import './App.css'
+import './App.css';
 
 class App extends Component {  
   render() {
@@ -16,7 +15,7 @@ class App extends Component {
         <div className='app'>
           <Form addNote={this.props.addNote} />
           <Grid notes={this.props.notes} removeNote={this.props.removeNote} />
-          <Calculator />
+          <Calculator/>
         </div>
       </div>
     );

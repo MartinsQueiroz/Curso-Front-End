@@ -1,8 +1,7 @@
-//ES6 Syntax
-
+// ES6 Syntax
 export const getNotes = () => {
     return {
-        type: 'GET_NOTES',
+        type: 'GET_NOTES'
     }
 }
 
